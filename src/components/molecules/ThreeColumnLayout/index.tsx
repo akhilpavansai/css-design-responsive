@@ -7,17 +7,16 @@ const AppBar = styled("div")({
   minHeight: "100px",
 });
 const OuterContainer = styled("div")({
-  display: "flex",
+  display: "grid",
+  gridTemplateColumns: "1.78fr 4.22fr",
 });
 const Menu = styled("div")({
-  flex: 1.75 / 6,
   background: "#90EE90",
   border: "10px solid green",
   boxSizing: "border-box",
   height: "600px",
 });
 const Content = styled("div")({
-  flex: 4.25 / 6,
   background: "#FFFBC8",
   border: "10px solid blue",
   boxSizing: "border-box",
