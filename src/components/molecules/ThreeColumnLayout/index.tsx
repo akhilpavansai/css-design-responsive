@@ -6,28 +6,31 @@ const AppBar = styled("div")({
   boxSizing: "border-box",
   minHeight: "100px",
 });
+const OuterContainer = styled("div")({
+  display: "flex",
+});
 const Menu = styled("div")({
-  display: "inline-block",
+  flex: 1.75 / 6,
   background: "#90EE90",
   border: "10px solid green",
   boxSizing: "border-box",
   height: "600px",
-  width: "30%",
 });
 const Content = styled("div")({
-  display: "inline-block",
+  flex: 4.25 / 6,
   background: "#FFFBC8",
   border: "10px solid blue",
   boxSizing: "border-box",
   minHeight: "600px",
-  width: "70%",
 });
 const index = () => {
   return (
     <>
       <AppBar />
-      <Menu />
-      <Content />
+      <OuterContainer>
+        <Menu />
+        <Content />
+      </OuterContainer>
     </>
   );
 };
